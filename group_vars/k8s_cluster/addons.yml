@@ -1,7 +1,7 @@
 ---
 # Kubernetes dashboard
 # RBAC required. see docs/getting-started.md for access details.
-dashboard_enabled: false
+dashboard_enabled: true
 
 # Helm deployment
 helm_enabled: true
@@ -97,7 +97,7 @@ rbd_provisioner_enabled: false
 # rbd_provisioner_reclaim_policy: Delete
 
 # Nginx ingress controller deployment
-ingress_nginx_enabled: true
+ingress_nginx_enabled: false
 # ingress_nginx_host_network: false
 ingress_publish_status_address: ""
 # ingress_nginx_nodeselector:
@@ -174,7 +174,7 @@ cert_manager_enabled: true
 #   - "--dns01-recursive-nameservers=1.1.1.1:53,8.8.8.8:53"
 
 # MetalLB deployment
-metallb_enabled: true
+metallb_enabled: false
 metallb_speaker_enabled: "{{ metallb_enabled }}"
 # metallb_speaker_nodeselector:
 #   kubernetes.io/os: "linux"
